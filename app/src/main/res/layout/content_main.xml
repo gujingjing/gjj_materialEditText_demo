@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    tools:context="gjj_unit_test.gjj_materialedittext_demo.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            app:met_baseColor="#003587"
+            app:met_primaryColor="#982360"
+            android:hint="Basic"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_baseColor="#003587"
+            app:met_primaryColor="#982360"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelText="met_floatingLabelText"
+            android:hint="met_floatingLabelText"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_baseColor="#003587"
+            app:met_primaryColor="#982360"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabelText="met_singleLineEllipsis"
+            android:hint="met_singleLineEllipsis"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_baseColor="#003587"
+            app:met_primaryColor="#982360"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"
+            app:met_maxCharacters="10"
+            app:met_errorColor="#ddaa00"
+            app:met_floatingLabelText="met_singleLineEllipsis"
+            android:hint="met_singleLineEllipsis"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="#003587"
+                app:met_primaryColor="#982360"
+                app:met_maxCharacters="11"
+                app:met_errorColor="#982360"
+                android:inputType="phone"
+                android:layout_weight="10"
+                app:met_helperText="电话号码"
+                android:hint="met_singleLineEllipsis"/>
+            <Button
+                android:text="phone测试"
+                android:id="@+id/btn_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
